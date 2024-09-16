@@ -1,6 +1,5 @@
-# from django.contrib import admin
-# from .models import Freelancers
+from django.contrib import admin
+from . import models
 
-# # Register your models here.
 
-# admin.register(Freelancers)
+admin.site.register(models.Freelancers)

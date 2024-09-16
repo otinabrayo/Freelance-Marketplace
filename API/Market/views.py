@@ -8,7 +8,8 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny
 class FreelancerRegister(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = FreelancerSerializer
-    permission_classes = [AllowAny]
+    # permission_classes = [IsAuthenticated, IsAdminUser]
+
 
 class FreelancersDetails(generics.ListCreateAPIView):
     queryset = Freelancers.objects.all()

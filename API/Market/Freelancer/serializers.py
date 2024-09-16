@@ -14,6 +14,8 @@ class FreelancerSerializer(serializers.ModelSerializer):
 
 
 class FreelancerDetailSerializer(serializers.ModelSerializer):
+    author = serializers.StringRelatedField()
+
     class Meta:
         model = Freelancers
         fields = ['id', 'title', 'skill', 'bio', 'created_at', 'hour_rates']

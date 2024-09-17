@@ -18,5 +18,5 @@ class FreelancerDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Freelancers
-        fields = ['id', 'title', 'skill', 'bio', 'created_at', 'hour_rates']
+        fields = '__all__'
 
